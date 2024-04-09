@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'greninger-lab.github.io/',
+  site: 'https://greninger-lab.github.io/',
   integrations: [mdx(), sitemap(), tailwind()]
 });
