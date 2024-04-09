@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Software" sideBarActiveItemID="software">
+  <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
+    <div>
+      <div
+        class="text-3xl w-full font-bold mb-5"
+        style="text-align: center; margin-top: 0px;"
+        "
+      >
+        Software Modules
+      </div>
+    </div>
+
+    <HorizontalCard
+      title="REVICA"
+      desc="Revica is a reference-based viral consensus genome assembly pipeline for some of the most common respiratory viruses."
+      url="https://github.com/greninger-lab/revica"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title="LAVA"
+      desc="LAVA is a simple command-line tool that allows dynamic and interactive visualization of viral genome evolution from longitudinal or linked samples. LAVA addresses the specific challenges posed by longitudinal sampling for viral infections."
+      url="https://github.com/greninger-lab/lava"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title="VAPID"
+      desc="VAPiD is a portable and lightweight command-line tool that supports annotation and NCBI GenBank deposition of nearly all unsegmented viral genomes. Instructions for downloading and installing VAPiD can be found at Github."
+      url="https://github.com/greninger-lab/VAPiD"
+    />
+
+    <div class="divider my-0 hover:shadow-xl"></div>
+
+    <div
+      class="card w-100 bg-base-100 transition ease-in-out hover:scale-[102%] md:flex md:justify-right"
+      style="margin-top: 22px;"
+    >
+      <figure>
+        <a target="_blank" href="https://github.com/greninger-lab">
+          <img
+            src="/bxl-github.svg"
+            alt="More programs hosted on our github."
+            width="200"
+            height="200"
+          /></a
+        </div>
+        </div>  
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Github</h2>
+          <p>More programs hosted on our github!</p>
+        </div>
+      </figure>
+    </div>
+  </main>
+</BaseLayout>
