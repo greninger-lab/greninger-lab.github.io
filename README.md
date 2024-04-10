@@ -48,19 +48,17 @@ This theme does not use Jekyll and instead a custom action with a deploy.yml fil
 	|   deploy.yml
 ```
 
-```markdown
 > [!Note]
->The deploy.yml file differs from the astro example to point pnpm to the latest version, where a section of the code is commented. 
-```
+> The deploy.yml file differs from the astro example to point pnpm to the latest version, where a section of the code is 
 
 ```
 package-manager: pnpm@latest
 ```
 
 Each time there are pushes to the github site, the site recompiles before it is published. This runs in a virtual environment of github and can be monitored.
-```markdown
+
 > [!CAUTION]
->Be wary of any packages you install to the website, something that compiles locally may not run on github. Make sure to compile the website before pushing to github to update package management folders and push all files including hidden files to the github if you choose to incorperate new libraries.
-```
+> Be wary of any packages you install to the website, something that compiles locally may not run on github. Make sure to compile the website before pushing to github to update package management folders and push all files including hidden files to the github if you choose to incorperate new libraries.
+
 
 
