@@ -43,7 +43,6 @@ This theme does not use Jekyll and instead a custom action with a deploy.yml fil
 
 ```
 └─── .github
-│  
 │   └───workflows
 	|   deploy.yml
 ```
@@ -55,10 +54,67 @@ This theme does not use Jekyll and instead a custom action with a deploy.yml fil
 package-manager: pnpm@latest
 ```
 
-Each time there are pushes to the github site, the site recompiles before it is published. This runs in a virtual environment of github and can be monitored.
+Each time there are pushes to the github site, the site recompiles before it is published. This runs in a virtual environment of github and can be monitored to debug any issues.
 
 > [!CAUTION]
-> Be wary of any packages you install to the website, something that compiles locally may not run on github. Make sure to compile the website before pushing to github to update package management folders and push all files including hidden files to the github if you choose to incorperate new libraries.
+> Be wary of any packages you install to the website, something that compiles locally may not run on github. Make sure to compile the website before pushing to github to update package management folders and push all files including hidden files to the github if you choose to incorporate new libraries.
 
+## Images
 
+Images for the site are held in the **public** folder with additional sub-directories to help organize the the images are held.
+```
+public
+└── Pub_Images
+    ├── BACTERIAL_GENOMICS
+    ├── CLINICAL_VIROLOGY_AND_MICROBIOLOGY
+    ├── People
+    ├── REVIEWS_AND_COMMENTARY
+    ├── VIRAL_GENOMICS_TRANSMISSION_AND_DISCOVERY
+    └── VIRUS-HOST_INTERACTIONS
+```
+Images were converted to .webp as this is a compression format optimized for web.
 
+## Updating Site
+
+The pages for the website are held in **src/pages** folder.
+```
+src/pages
+├── 404.astro
+├── blog
+│   ├── [...page].astro
+│   └── [slug].astro
+├── contact.astro 
+├── index.astro
+├── people.astro
+├── publications.astro
+├── research.astro
+│   ├── license.md
+│   └── readme.md
+├── software.astro
+└── store
+    ├── [...page].astro
+    └── [slug].astro
+```
+
+Adding or modifying pages should be done by editing the _SideBarMenu.astro_ file held in **src/components/SideBarMenu.astro**
+```
+src/components
+├── BaseHead.astro
+├── Card.astro
+├── Footer.astro
+├── Header.astro
+├── HorizontalCard.astro
+├── HorizontalShopItem.astro
+├── NavBar.astro
+├── SideBar.astro
+├── SideBarFooter.astro
+├── SideBarMenu.astro
+└── cv
+    └── TimeLine.astro
+```
+The five main pages you may want to update are:
+* contact.astro
+* index.astro
+* people.astro
+* publications.astro
+* research.astro
