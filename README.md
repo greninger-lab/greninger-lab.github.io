@@ -260,10 +260,10 @@ This is the page that will likely use the most updates held in the _ people.astr
 > Lab alumni are held in a daisy UI [table](https://daisyui.com/components/table/) widget:
 
 ```html
-        <tr>
-          <td>Carlos Avendaño</td> #name
-          <td>PhD at Juilliard School</td> #what they are up too
-        </tr>
+<tr>
+  <td>Carlos Avendaño</td> #name
+  <td>PhD at Juilliard School</td> #what they are up too
+</tr>
 ```
 
 ### Contact
