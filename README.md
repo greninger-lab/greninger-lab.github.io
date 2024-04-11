@@ -100,11 +100,11 @@ src/pages
 ├── blog
 │   ├── [...page].astro
 │   └── [slug].astro
-├── ==_contact.astro_== 
-├── ==_index.astro_==
-├── ==_people.astro_==
-├── ==_publications.astro_==
-├── ==_research.astro_==
+├── contact.astro #Contact 
+├── index.astro #Home
+├── people.astro #People
+├── publications.astro #Publications
+├── research.astro #Research
 │   ├── license.md
 │   └── readme.md
 ├── software.astro
@@ -126,7 +126,7 @@ src/components
 ├── NavBar.astro
 ├── SideBar.astro
 ├── SideBarFooter.astro
-├── ==_SideBarMenu.astro_==
+├── SideBarMenu.astro #Table of contents
 └── cv
     └── TimeLine.astro
 
