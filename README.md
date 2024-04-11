@@ -94,6 +94,7 @@ Images were converted to .webp as this is a compression format optimized for web
 
 The pages for the website are held in **src/pages** folder.
 
+```
 src/pages
 ├── 404.astro
 ├── blog
@@ -110,10 +111,11 @@ src/pages
 └── store
     ├── [...page].astro
     └── [slug].astro
-
+```
 
 Adding or modifying pages should be done by editing the _SideBarMenu.astro_ file held in **src/components/SideBarMenu.astro**
 
+```
 src/components
 ├── BaseHead.astro
 ├── Card.astro
@@ -134,6 +136,7 @@ The pages of the website are:
 * people.astro
 * publications.astro
 * research.astro
+```
 
 ### Home
 
